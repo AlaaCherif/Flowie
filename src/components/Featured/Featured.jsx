@@ -1,7 +1,9 @@
+import { AnimatePresence } from 'framer-motion';
 import React from 'react';
 import { useState } from 'react';
+import FeaturedTab1 from '../FeaturedTabs/FeaturedTab1';
+import FeaturedTab2 from '../FeaturedTabs/FeaturedTab2';
 import classes from './featured.module.css';
-import FeaturedItem from './FeaturedItem/FeaturedItem';
 
 export default function Featured() {
   const [active, setActive] = useState('1');
@@ -24,31 +26,7 @@ export default function Featured() {
     setActive('3');
     animateMain();
   };
-  const firstTab = (
-    <>
-      <div className={classes.inner}>
-        <FeaturedItem new='true' />
-        <FeaturedItem />
-        <FeaturedItem />
-        <FeaturedItem />
-      </div>
-      <img
-        src='https://images.unsplash.com/photo-1623244307563-f9ade3df13c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWluaW1hbGlzbW98ZW58MHx8MHx8&w=1000&q=80'
-        alt='TARMA'
-        height='800'
-        width='400'
-      />
-    </>
-  );
-  const secondTab = (
-    <div className={classes['second-container']}>
-      <img
-        src='https://c.stocksy.com/a/l28800/z9/1937547.jpg'
-        alt='Workspace'
-      />
-      <span>Discover our workspace collection</span>
-    </div>
-  );
+
   return (
     <div className={classes.container}>
       <h1 className={classes.title}>FEATURED ITEMS</h1>
@@ -72,11 +50,13 @@ export default function Featured() {
           OUTDOOR
         </span>
       </div>
-      <div className={animationClass}>
-        {active === '1' ? firstTab : <></>}
-        {active === '2' ? secondTab : <></>}
-        {active === '3' ? <p>fok zebi aad </p> : <></>}
-      </div>
+      <AnimatePresence>
+        <div key='hi' className={animationClass}>
+          {active === '1' ? <FeaturedTab1 /> : <></>}
+          {active === '2' ? <FeaturedTab2 /> : <></>}
+          {active === '3' ? <p>fok zebi aad </p> : <></>}
+        </div>
+      </AnimatePresence>
     </div>
   );
 }

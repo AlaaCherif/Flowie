@@ -1,9 +1,9 @@
 import React from 'react';
 import GalleryItem from './GalleryItem';
 import classes from './gallery.module.css';
-import gallery_1 from '../../images/gallery_1.jpeg';
-import gallery_2 from '../../images/gallery_2.jpg';
-import gallery_3 from '../../images/gallery_3.jpg';
+import gallery_1 from '../../assets/images/gallery_1.jpeg';
+import gallery_2 from '../../assets/images/gallery_2.jpg';
+import gallery_3 from '../../assets/images/gallery_3.jpg';
 
 export default function Gallery() {
   return (

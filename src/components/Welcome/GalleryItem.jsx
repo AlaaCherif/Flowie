@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react/cjs/react.development';
 import classes from './galleryitem.module.css';
-import { ReactComponent as Mysvg } from '../../images/new.svg';
+import { ReactComponent as Mysvg } from '../../assets/images/new.svg';
 
 export default function GalleryItem(props) {
   const [hovered, sethovered] = useState(false);
