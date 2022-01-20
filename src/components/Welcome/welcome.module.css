@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
+}
+.title {
+  color: #333;
+  letter-spacing: 3.5px;
+  text-align: center;
+}
+.paragraph {
+  color: rgba(102, 102, 102, 0.753);
+  margin: 0;
+}

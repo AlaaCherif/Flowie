@@ -1,0 +1,30 @@
+div.gallery {
+  margin: 20px;
+  border: 1px solid transparent;
+  width: 250px;
+  cursor: pointer;
+  position: relative;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(77, 75, 75);
+  font-weight: 450;
+}
+.hover {
+  color: #dadd59 !important;
+}
+.new {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  transform: rotate(20deg);
+}

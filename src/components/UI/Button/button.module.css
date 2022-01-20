@@ -1,0 +1,54 @@
+.button-primary {
+  background-color: #333;
+  color: rgb(206, 206, 206);
+  padding: 10px 40px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #333;
+  cursor: pointer;
+  margin-right: 0.7rem;
+  border-radius: 2px;
+  /* box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.555);*/
+}
+.button-primary:hover {
+  color: white;
+  -webkit-transition: color 300ms linear;
+  -ms-transition: color 300ms linear;
+  transition: color 300ms linear;
+}
+.button-secondary {
+  background-color: #dadd59;
+  color: #333;
+  padding: 10px 40px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #dadd59;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.button-secondary:hover {
+  color: black;
+  -webkit-transition: color 300ms linear;
+  -ms-transition: color 300ms linear;
+  transition: color 300ms linear;
+}
+.button-cart {
+  color: #333;
+  padding: 10px 40px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  margin-right: 0.7rem;
+  width: 100%;
+}
+.button-cart:hover {
+  background-color: #82a05a;
+  -webkit-transition: color 300ms linear;
+  -ms-transition: color 300ms linear;
+  transition: color 300ms linear;
+  color: white;
+}
